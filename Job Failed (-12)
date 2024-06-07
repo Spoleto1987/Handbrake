@@ -1,0 +1,296 @@
+Description of problem or question:
+This is a recent, recurring problem. I've tried versions 1.5 thru 1.8(latest) and get an error with every attempt, with different files, either converting formats or adding subtitles.
+
+
+
+Steps to reproduce the problem (If Applicable):
+I've attached one log, but have many more...
+
+
+
+HandBrake version (e.g., 1.0.0):
+1.5 through 1.8
+
+
+
+Operating system and version (e.g., Ubuntu 16.04 LTS, macOS 10.13 High Sierra, Windows 10 Creators Update):
+W10
+
+
+
+HandBrake Activity Log ***required*** (see How-to get an activity log)
+
+Code: Select all
+
+HandBrake 1.5.1 (2022011000)
+OS: Microsoft Windows NT 10.0.19045.0
+CPU: AMD Ryzen 7 3700X 8-Core Processor             
+Ram: 32670 MB, 
+GPU Information:
+  NVIDIA GeForce GTX 570 - 23.21.13.9135
+Screen: 1920x1080
+Temp Dir: C:\Users\Dan's PC_2\AppData\Local\Temp\
+Install Dir: C:\Program Files\HandBrake\
+Data Dir: C:\Users\Dan's PC_2\AppData\Roaming\HandBrake
+
+-------------------------------------------
+
+ # Starting Encode ...
+
+[13:23:50] base preset: Fast 1080p30 (Modified)
+[13:23:50] Remote Process started with Process ID: 22192 using port: 8037. Max Allowed Instances: 1
+[13:23:50] Worker: Starting HandBrake Engine ...
+[13:23:50] Worker: Starting Web Server on port 8037 ...
+[13:23:50] Worker: Disconnected worker monitoring enabled!
+[13:23:50] Compile-time hardening features are enabled
+Cannot load nvEncodeAPI64.dll
+Cannot load nvEncodeAPI64.dll
+Cannot load nvEncodeAPI64.dll
+Cannot load nvEncodeAPI64.dll
+[13:23:50] hb_init: starting libhb thread
+[13:23:50] Starting work at: Thu Jun 06 13:23:50 2024
+[13:23:50] 1 job(s) to process
+[13:23:50] json job:
+{
+  "Audio": {
+    "AudioList": [
+      {
+        "Bitrate": 160,
+        "DRC": 0,
+        "Encoder": "av_aac",
+        "Gain": 0,
+        "Mixdown": 4,
+        "NormalizeMixLevel": false,
+        "Samplerate": 0,
+        "Track": 0,
+        "DitherMethod": 0
+      }
+    ],
+    "CopyMask": [
+      "copy:aac",
+      "copy:ac3",
+      "copy:dtshd",
+      "copy:dts",
+      "copy:eac3",
+      "copy:flac",
+      "copy:mp3",
+      "copy:truehd",
+      "copy:mp2"
+    ],
+    "FallbackEncoder": "ac3"
+  },
+  "Destination": {
+    "ChapterList": [
+      {
+        "Name": "Chapter 1"
+      }
+    ],
+    "ChapterMarkers": true,
+    "AlignAVStart": false,
+    "File": "C:\\Users\\Dan\u0027s PC_2\\Desktop\\Encoded Videos\\Cold.Meat.2023.720P.Webrip.X264.Aac-[Yts.Mx].mkv",
+    "Mp4Options": {
+      "IpodAtom": false,
+      "Mp4Optimize": false
+    },
+    "Mux": "av_mkv"
+  },
+  "Filters": {
+    "FilterList": [
+      {
+        "ID": 4,
+        "Settings": {
+          "mode": "7"
+        }
+      },
+      {
+        "ID": 3,
+        "Settings": {
+          "block-height": "16",
+          "block-thresh": "40",
+          "block-width": "16",
+          "filter-mode": "2",
+          "mode": "3",
+          "motion-thresh": "1",
+          "spatial-metric": "2",
+          "spatial-thresh": "1"
+        }
+      },
+      {
+        "ID": 13,
+        "Settings": {
+          "crop-bottom": "0",
+          "crop-left": "0",
+          "crop-right": "0",
+          "crop-top": "0",
+          "height": "582",
+          "width": "1280"
+        }
+      },
+      {
+        "ID": 6,
+        "Settings": {
+          "mode": "2",
+          "rate": "27000000/900000"
+        }
+      }
+    ]
+  },
+  "PAR": {
+    "Num": 873,
+    "Den": 872
+  },
+  "Metadata": {},
+  "SequenceID": 0,
+  "Source": {
+    "Angle": 1,
+    "Range": {
+      "Type": "chapter",
+      "Start": 1,
+      "End": 1
+    },
+    "Title": 1,
+    "Path": "C:\\Users\\Dan\u0027s PC_2\\Desktop\\Encoded Videos\\AVC Format Convert\\Format Convert\\Cold.Meat.2023.720p.WEBRip.x264.AAC-[YTS.MX].mkv"
+  },
+  "Subtitle": {
+    "Search": {
+      "Burn": false,
+      "Default": false,
+      "Enable": true,
+      "Forced": true
+    },
+    "SubtitleList": [
+      {
+        "Burn": true,
+        "Default": false,
+        "Forced": false,
+        "ID": 0,
+        "Offset": 0,
+        "Track": -1,
+        "Import": {
+          "Codeset": "UTF-8",
+          "Filename": "F:\\Feature Films\\Cold Meat (2023) [720p] [WEBRip] [YTS.MX]\\Cold.Meat.2023.720p.WEBRip.x264.AAC-[YTS.MX].srt",
+          "Language": "eng",
+          "Format": "SRT"
+        }
+      }
+    ]
+  },
+  "Video": {
+    "Encoder": "x264",
+    "Level": "4.0",
+    "TwoPass": false,
+    "Turbo": false,
+    "ColorMatrixCode": 0,
+    "Options": "",
+    "Preset": "fast",
+    "Profile": "main",
+    "Quality": 22,
+    "QSV": {
+      "Decode": false
+    }
+  }
+}
+[13:23:50] CPU: AMD Ryzen 7 3700X 8-Core Processor
+[13:23:50]  - logical processor count: 16
+[13:23:50] Intel Quick Sync Video support: no
+[13:23:50] hb_scan: path=C:\Users\Dan's PC_2\Desktop\Encoded Videos\AVC Format Convert\Format Convert\Cold.Meat.2023.720p.WEBRip.x264.AAC-[YTS.MX].mkv, title_index=1
+udfread ERROR: ECMA 167 Volume Recognition failed
+src/libbluray/disc/disc.c:333: failed opening UDF image C:\Users\Dan's PC_2\Desktop\Encoded Videos\AVC Format Convert\Format Convert\Cold.Meat.2023.720p.WEBRip.x264.AAC-[YTS.MX].mkv
+src/libbluray/disc/disc.c:437: error opening file BDMV\index.bdmv
+src/libbluray/disc/disc.c:437: error opening file BDMV\BACKUP\index.bdmv
+src/libbluray/bluray.c:2646: nav_get_title_list(C:\Users\Dan's PC_2\Desktop\Encoded Videos\AVC Format Convert\Format Convert\Cold.Meat.2023.720p.WEBRip.x264.AAC-[YTS.MX].mkv\) failed
+[13:23:50] bd: not a bd - trying as a stream/file instead
+libdvdread: Encrypted DVD support unavailable.
+liblibdvdread: DVDOpenFileUDF:UDFFindFile /VIDEO_TS/VIDEO_TS.IFO failed
+dvdread: Can't open file VIDEO_TS.IFO.
+libdvdnav: vm: vm: failed to read VIDEO_TS.IFO
+[13:23:50] dvd: not a dvd - trying as a stream/file instead
+Input #0, matroska,webm, from 'C:\Users\Dan's PC_2\Desktop\Encoded Videos\AVC Format Convert\Format Convert\Cold.Meat.2023.720p.WEBRip.x264.AAC-[YTS.MX].mkv':
+  Metadata:
+    COMPATIBLE_BRANDS: isomiso2avc1mp41
+    MAJOR_BRAND     : isom
+    MINOR_VERSION   : 512
+    ENCODER         : Lavf59.34.102
+  Duration: 01:28:52.94, start: 0.000000, bitrate: 579 kb/s
+  Stream #0:0: Video: hevc (Main), yuv420p(tv, bt709, progressive), 1280x582 [SAR 873:872 DAR 240:109], SAR 1:1 DAR 640:291, 24 fps, 24 tbr, 1k tbn, 24 tbc
+    Metadata:
+      ENCODER         : Lavc59.55.103 libx265
+      DURATION        : 01:28:52.878000000
+  Stream #0:1: Audio: vorbis, 44100 Hz, stereo, fltp (default)
+    Metadata:
+      HANDLER_NAME    : SoundHandler
+      VENDOR_ID       : [0][0][0][0]
+      ENCODER         : Lavc59.55.103 libvorbis
+      DURATION        : 01:28:52.936000000
+[13:23:50] scan: decoding previews for title 1
+[13:23:50] scan: audio 0x1: vorbis, rate=44100Hz, bitrate=1 Unknown (Vorbis) (2.0 ch)
+[13:23:51] WARNING: Video PAR 873:872 != container PAR 1:1
+[13:23:51] scan: 10 previews, 1280x582, 24.000 fps, autocrop = 0/0/0/0, aspect 2.20:1, PAR 873:872, color profile: 1-1-1, chroma location: left
+[13:23:51] libhb: scan thread found 1 valid title(s)
+[13:23:51] Skipping subtitle scan.  No suitable subtitle tracks.
+[13:23:51] Starting Task: Encoding Pass
+[13:23:51] Skipping crop/scale filter
+[13:23:51] [ass] libass API version: 0x1502000
+[13:23:51] [ass] libass source: tarball: 0.15.2
+[13:23:51] [ass] Shaper: FriBidi 1.0.11 (SIMPLE) HarfBuzz-ng 3.1.2 (COMPLEX)
+[13:23:51] [ass] Using font provider directwrite (with GDI)
+[13:23:51] work: track 1, dithering not supported by codec
+[13:23:51] work: only 1 chapter, disabling chapter markers
+[13:23:51] job configuration:
+[13:23:51]  * source
+[13:23:51]    + C:\Users\Dan's PC_2\Desktop\Encoded Videos\AVC Format Convert\Format Convert\Cold.Meat.2023.720p.WEBRip.x264.AAC-[YTS.MX].mkv
+[13:23:51]    + title 1, chapter(s) 1 to 1
+[13:23:51]    + container: matroska,webm
+[13:23:51]    + data rate: 579 kbps
+[13:23:51]  * destination
+[13:23:51]    + C:\Users\Dan's PC_2\Desktop\Encoded Videos\Cold.Meat.2023.720P.Webrip.X264.Aac-[Yts.Mx].mkv
+[13:23:51]    + container: Matroska (libavformat)
+[13:23:51]  * video track
+[13:23:51]    + decoder: hevc 8-bit (yuv420p)
+[13:23:51]    + filters
+[13:23:51]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[13:23:51]      + Decomb (mode=39)
+[13:23:51]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[13:23:51]        + frame rate: 24.000 fps -> peak rate limited to 30.000 fps
+[13:23:51]      + Subtitle renderer ()
+[13:23:51]    + Output geometry
+[13:23:51]      + storage dimensions: 1280 x 582
+[13:23:51]      + pixel aspect ratio: 873 : 872
+[13:23:51]      + display dimensions: 1281 x 582
+[13:23:51]    + encoder: H.264 (libx264)
+[13:23:51]      + preset:  fast
+[13:23:51]      + profile: main
+[13:23:51]      + level:   4.0
+[13:23:51]      + quality: 22.00 (RF)
+[13:23:51]      + color profile: 1-1-1
+[13:23:51]      + chroma location: left
+[13:23:51]  * subtitle track 1, English [SRT] (track 0, id 0xff000000, Text) -> Render/Burn-in, offset: 0, charset: UTF-8
+[13:23:51]  * audio track 1
+[13:23:51]    + decoder: Unknown (Vorbis) (2.0 ch) (track 1, id 0x1)
+[13:23:51]      + samplerate: 44100 Hz
+[13:23:51]    + mixdown: Stereo
+[13:23:51]    + encoder: AAC (libavcodec)
+[13:23:51]      + bitrate: 160 kbps, samplerate: 44100 Hz
+[13:23:51] sync: expecting 127990 video frames
+[13:23:51] encx264: min-keyint: 24, keyint: 240
+[13:23:51] encx264: encoding at constant RF 22.000000
+[13:23:51] encx264: unparsed options: level=4.0:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=25000:vbv-maxrate=20000:rc-lookahead=30
+x264 [info]: using SAR=873/872
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+x264 [info]: profile Main, level 4.0, 4:2:0, 8-bit
+[13:23:51] sync: first pts video is 0
+[13:23:51] sync: "Chapter 1" (1) at frame 1 time 0
+[13:23:51] sync: first pts audio 0x1 is 0
+[13:23:51] sync: first pts subtitle 0xff000000 is 0
+[13:23:51] [ass] fontselect: (sans-serif, 400, 0) -> ArialMT, 0, ArialMT
+[13:23:54] [ass] fontselect: (sans-serif, 400, 100) -> Arial-ItalicMT, 0, Arial-ItalicMT
+
+
+[13:24:14] Worker process exited!
+[13:24:14] Worker process exit was not expected.
+
+ # Job Failed (-12)
+
+
+
+Top
