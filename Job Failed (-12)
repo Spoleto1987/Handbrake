@@ -1,22 +1,14 @@
 Description of problem or question:
 This is a recent, recurring problem. I've tried versions 1.5 thru 1.8(latest) and get an error with every attempt, with different files, either converting formats or adding subtitles.
 
-
-
 Steps to reproduce the problem (If Applicable):
 I've attached one log, but have many more...
-
-
 
 HandBrake version (e.g., 1.0.0):
 1.5 through 1.8
 
-
-
 Operating system and version (e.g., Ubuntu 16.04 LTS, macOS 10.13 High Sierra, Windows 10 Creators Update):
 W10
-
-
 
 HandBrake Activity Log ***required*** (see How-to get an activity log)
 
@@ -32,9 +24,7 @@ Screen: 1920x1080
 Temp Dir: C:\Users\Dan's PC_2\AppData\Local\Temp\
 Install Dir: C:\Program Files\HandBrake\
 Data Dir: C:\Users\Dan's PC_2\AppData\Roaming\HandBrake
-
--------------------------------------------
-
+----------------------------------------
  # Starting Encode ...
 
 [13:23:50] base preset: Fast 1080p30 (Modified)
